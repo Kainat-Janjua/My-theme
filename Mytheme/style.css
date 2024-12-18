@@ -1,0 +1,372 @@
+/**
+ * Theme Name:        My Theme
+ * Theme URI:         https://example.com/fabled-sunset
+ * Description:       This theme is created for learning theme development.
+ * Version:           1.0.0
+ * Author:            Kainat Amjad Janjua
+ * Author URI:        https://example.com
+ * Tags:              block-patterns, full-site-editing
+ * Text Domain:       fabled-sunset
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+ body
+ {
+    font-family: Arial,sans-serif;
+    background-color: #eae4e4;
+    margin: 0;
+    padding: 0;
+    color:#C0C0C0;
+ }
+/* Header section */
+#header {
+   display: flex;
+   background-color: #eae4e4;
+   color: #264348;
+   height: 60px;
+   justify-content: center; /* Center the items horizontally */
+   padding: 10px 20px; /* Add some padding for better spacing around the header */
+}
+
+/* Menu items */
+.menu_item {
+   list-style: none; /* Remove default list styling */
+   display: flex; /* Display menu items in a row */
+   padding: 0; /* Remove default padding */
+   margin: 0; /* Remove default margin */
+   justify-content: center;
+   align-items: center;
+}
+
+/* Individual menu links */
+.menu_item li {
+   margin: 15px; /* Space between menu items */
+   justify-content: center;
+   align-items: center;
+}
+
+/* Menu links */
+.menu_item a {
+   text-decoration: none; /* Remove underline from links */
+   color: #264348; /* Set link color */
+   font-weight: bold; /* Make the text bold */
+   transition: color 0.3s; /* Smooth transition for hover effect */
+   justify-content: center;
+   align-items: center;
+}
+
+
+.logo {
+   margin-right: auto; /* Pushes the logo to the left */
+}
+
+.logo img {
+   width: 100%;                /* Set the desired width of the logo */
+   height: auto;                /* Maintain aspect ratio */
+   max-height: 50px;            /* Set a maximum height for the logo */
+}
+/* ------------------------------------------------------------------- */
+.video-container { 
+   width: 100%;
+   overflow: hidden; /* Prevent overflow */
+}
+
+video {
+   width: 100%;
+   height: auto; /* Maintain aspect ratio */
+   object-fit: cover; /* Cover the entire area */
+}
+/* ------------------------------------------------------------------- */
+/* items */
+/* General Styles */
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #eae4e4;
+   margin: 0;
+  
+}
+.content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #eae4e4;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin: 20px 0;
+}
+/* ------------------------------------------------------------------- */
+.text-left { 
+   flex: 1;
+}
+
+.text-right {
+   flex: 2;
+}
+
+h2 {
+   font-size: 24px;
+   color: #333;
+   margin: 0 0 10px;
+}
+
+p {
+   font-size: 16px;
+   color: #666;
+   line-height: 1.5;
+}
+
+.text-left h2:hover {
+   color: #8ea7c2; /* Change color on hover */
+   transition: color 0.3s ease;
+}
+
+.text-right p:hover {
+   color: #555; /* Change color on hover */
+   transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .content {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .text-left, .text-right {
+       flex: none;
+       margin-bottom: 20px;
+   }
+}
+/* ------------------------------------------------------------------- */
+/* Posts Container */
+#post
+{
+   color: #264348;
+}
+.posts {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+/* Individual Post Item */
+.posts-item {
+   background-color:#ebebe9;
+   color: #283133;
+   border: 1px solid #6A0DAD;
+   text-decoration: none;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin: 10px;
+   padding: 15px;
+   flex: 1 1 calc(33.333% - 20px); /* 3 items per row with space */
+   box-sizing: border-box;
+   transition: transform 0.2s;
+}
+.title
+{
+   text-decoration: none;
+   color: #283133;
+}
+element.style
+{
+   text-decoration: none;
+}
+.posts-item:hover {
+   transform: translateY(-5px);
+}
+
+/* Post Thumbnail */
+.post-thumbnail {
+   height: 300px; /* Set a fixed height */
+   overflow: hidden; /* Hide overflow */
+   border-radius: 8px; /* Match the border radius */
+}
+
+.post-thumbnail img {
+   width: 100%; /* Make the image take full width */
+   height: 100%; /* Make the image take full height */
+   object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+/* Post Title */
+/* Post Title */
+.posts-item h2 {
+   font-size: 1.5em;
+   margin: 10px 0;
+   text-decoration: none !important;
+   color: #4a3a36 !important; /* Change this to your desired color */
+}
+
+/* Image Caption */
+.image-caption {
+   font-size: 0.9em;
+   text-decoration: none;
+   color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .posts-item {
+       flex: 1 1 calc(50% - 20px); /* 2 items per row */
+   }
+}
+
+@media (max-width: 480px) {
+   .posts-item {
+       flex: 1 1 100%; /* 1 item per row */
+   }
+}
+/* ------------------------------------------------------------------- */
+/* end */
+
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+.slider {
+   position: relative;
+   width: 100%;
+   height: 680px;
+   max-width: 1200px; /* Adjust as needed */
+   margin: auto;
+   overflow: hidden;
+}
+
+.posts {
+   display: flex;
+}
+
+.slides {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+   width: 100%; /* Ensure the slides container takes full width */
+}
+
+.slide {
+   box-sizing: border-box;
+   flex: 1 0 25%; /* Adjust this value based on how many slides you want to show */
+   padding: 10px; /* Optional: Add some padding */
+}
+
+.post-thumbnail img {
+   display: block;
+   width: 100%; /* Ensure the image takes the full width of the slide */
+}
+/* ------------------------------------------------------------------- */
+/* for each page */
+/* Container for post content */
+.post-page {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px; /* Add some spacing between the image and text */
+   align-items: flex-start; /* Align items at the top */
+   margin: 20px 0;
+}
+
+/* Style for the image container */
+.post-image {
+   flex: 1 1 20%; /* Allow the image container to take 40% of the width */
+   max-width: 40%; /* Ensure the image container doesn't exceed 40% width */
+   text-align: center; /* Center the image horizontally within its container */
+}
+.title
+{
+   color: #264348;
+}
+.post-image img {
+   
+   max-width: 100%; /* Ensure the image fits within its container */
+   height: auto; /* Maintain the image's aspect ratio */
+   border-radius: 5px; /* Optional: add rounded corners */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+/* Style for the text container */
+.post-text {
+   flex: 1 1 60%; /* Allow the text container to take 60% of the width */
+   max-width: 60%; /* Ensure the text container doesn't exceed 60% width */
+   padding: 10px; /* Add some padding for better readability */
+   font-size: 1rem;
+   line-height: 1.6;
+   color: #030202; /* Adjust text color */
+}
+
+/* ------------------------------------------------------------------- */
+.text_index
+{
+   padding: 10px;
+   margin-top: 20px;
+}
+.heading_info
+{
+   text-align: center;
+
+}
+.para_info
+{
+   text-align: center;
+}
+.p1
+{
+   text-align: center;
+}
+.contact-image
+{
+   height: 500px;
+}
+
+.footer-container {
+   display: flex;
+   font-family: sans-serif;
+   justify-content: space-around; /* Distributes space evenly */
+   max-width: 1200px; /* Adjust as needed */
+   margin: 0 auto; /* Center the footer */
+}
+
+.footer-section {
+   flex: 1; /* Each section takes equal space */
+   padding: 0 20px; /* Add padding to sections */
+}
+
+.footer-section h3 {
+   margin-bottom: 10px; /* Space between heading and list */
+}
+
+.footer-section ul {
+   list-style-type: none; /* Remove bullet points */
+   padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+   margin: 5px 0; /* Space between list items */
+}
+
+.footer-section ul li a {
+   color: #fff; /* Link color */
+   font-size: small;
+   text-decoration: none; /* Remove underline */
+}
+
+.footer-section ul li a:hover {
+   text-decoration: underline; /* Underline on hover */
+}
+#footer
+{
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+  padding: 15px 0; 
+}
+/*#footer a {
+   color: rgb(163, 219, 221); 
+   text-decoration: none; 
+   text-decoration: underline;
+}
+*/
